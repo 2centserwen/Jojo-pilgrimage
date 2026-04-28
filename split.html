@@ -711,7 +711,7 @@ function renderSettlement(){
       const shareDisp = e.ccy === 'GBP' ? g.share          : e.shares[i] || 0;
       return `<div class="detail-row">
         <span>${e.desc}</span>
-        <span style="font-family:var(--mono);font-size:11px">paid ${sym}${paidDisp.toFixed(2)} / owes ${sym}${shareDisp.toFixed(2)}</span>
+        <span style="font-family:var(--mono);font-size:11px">paid ${sym}${paidDisp.toFixed(2)} / spent ${sym}${shareDisp.toFixed(2)}</span>
       </div>`;
     }).filter(Boolean).join('');
 
