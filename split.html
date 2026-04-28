@@ -231,7 +231,22 @@ input,select,button{font-family:var(--body);}
   <!-- People -->
   <div class="people-bar" id="peopleBar"></div>
   
-  <!-- Add / Edit form -->
+ 
+
+  <!-- Currency totals -->
+  <div class="ccy-totals" id="ccyTotals"></div>
+
+  <!-- Table -->
+  <div class="table-wrap">
+    <div class="table-head-bar">
+      <h3>All Expenses</h3>
+      <span class="pill" id="expCount">0 entries</span>
+    </div>
+    <div style="overflow-x:auto"><table class="tbl"><thead><tr id="tableHead"></tr></thead><tbody id="tableBody"></tbody></table></div>
+  </div>
+</div>
+
+   <!-- Add / Edit form -->
   <div class="form-card" id="formCard">
     <div class="form-card-title">
       <span id="formTitle">Add Expense</span>
@@ -277,19 +292,7 @@ input,select,button{font-family:var(--body);}
       </button>
     </div>
   </div>
-
-  <!-- Currency totals -->
-  <div class="ccy-totals" id="ccyTotals"></div>
-
-  <!-- Table -->
-  <div class="table-wrap">
-    <div class="table-head-bar">
-      <h3>All Expenses</h3>
-      <span class="pill" id="expCount">0 entries</span>
-    </div>
-    <div style="overflow-x:auto"><table class="tbl"><thead><tr id="tableHead"></tr></thead><tbody id="tableBody"></tbody></table></div>
-  </div>
-</div>
+  
 
 <!-- ══ SETTLEMENT TAB ══ -->
 <div class="section section-hidden" id="tab-settlement">
