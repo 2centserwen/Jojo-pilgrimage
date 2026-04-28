@@ -572,7 +572,7 @@ function render(){ renderTableHead(); renderBody(); renderCcyTotals(); }
 
 function renderTableHead(){
   const pc=APP.people.map(p=>`<th class="h-paid">${p.name} paid</th>`).join('');
-  const sc=APP.people.map(p=>`<th class="h-share">${p.name} owes</th>`).join('');
+  const sc=APP.people.map(p=>`<th class="h-share">${p.name}'s share</th>`).join('');
   document.getElementById('tableHead').innerHTML=`
     <th>Date</th><th>Description</th><th>Category</th><th class="h-paid">CCY</th>${pc}${sc}<th></th>`;
 }
